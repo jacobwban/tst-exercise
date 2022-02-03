@@ -38,7 +38,7 @@ function App() {
   }, [formState]);
 
   const inputChanged = (name: string, value: string) => {
-    setFormState(() => ({ ...formState, [name]: value }));
+    setFormState((fs) => ({ ...fs, [name]: value }));
   };
 
   return (
